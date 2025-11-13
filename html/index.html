@@ -92,6 +92,22 @@
       font-size: 0.85rem;
       margin-top: 2rem;
     }
+
+    .forms-row {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap; /* allows them to stack on small screens */
+}
+
+.forms-row iframe {
+  width: 100%;
+  max-width: 450px;   /* adjust for best side-by-side size */
+  height: 900px;      /* set consistent height */
+  border: none;
+  border-radius: 8px;
+}
+
   </style>
 </head>
 <body>
@@ -196,8 +212,16 @@
 <div class="feedback-section">
   <h2>Share Your Feedback</h2>
   <p>We’d love to hear your thoughts about the website, these events, and future ideas for the Pomona College Alumni Bay Area Chapter!</p>
-  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScF5XS4QU-hP_bKsgtMW5GSckk4mc2VQmXEPDuSNy_xr-eKmg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+  <div class="forms-row">
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScF5XS4QU-hP_bKsgtMW5GSckk4mc2VQmXEPDuSNy_xr-eKmg/viewform?embedded=true">
+    </iframe>
+
+    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeZbybq-z7cHeBEOC4WXDGFpDZfHd7kKWUonVxS469hK43fWw/viewform?embedded=true">
+    </iframe>
+  </div>
 </div>
+
 
 <footer>
   © 2025 Pomona College Alumni – Bay Area Regional Chapter
